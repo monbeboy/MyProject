@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/bb"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_margin="10dp"
+        android:focusableInTouchMode="false"
+        android:foreground="@android:drawable/divider_horizontal_dark"
+        app:srcCompat="@drawable/gg" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="    ลงชื่อเข้าใช้"
+        android:textSize="18dp"
+        android:translationX="20dp"
+        app:autoSizeTextType="uniform" />
+
+    <EditText
+        android:id="@+id/edittext_newcategory"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="  name - surname"
+        android:translationX="20dp"
+        android:translationY="-10dp" />
+
+    <Button
+        android:id="@+id/button_category"
+        android:layout_width="99dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:onClick="NextPage1"
+        android:text="Login"
+        android:translationX="270dp"
+        android:translationY="-70dp" />
+
+    <Spinner
+        android:id="@+id/spinner_categories"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:translationY="-40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/todo_listview"
+            android:layout_width="match_parent"
+            android:layout_height="347dp"
+            android:layout_below="@+id/button_category"
+            android:layout_alignParentStart="true"
+            android:translationY="0dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

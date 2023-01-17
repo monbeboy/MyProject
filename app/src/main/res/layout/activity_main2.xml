@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cc"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_200"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:text="ภาพอาคารสถานที่"
+        android:gravity="center"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnkacan60pe"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:onClick="Pagekacan60pe"
+            android:text="สำนักงานอธิการบดี"
+            android:translationY="20dp" />
+
+        <Button
+            android:id="@+id/btnkanjadkan"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:onClick="Pagekanjadkan"
+            android:text="คณะวิทยาการจัดการ"
+            android:translationY="-10dp" />
+
+        <Button
+            android:id="@+id/btnmanuchsad"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:onClick="Pagemanuchsad"
+            android:text="คณะมนุษยศาสตร์และสังคมศาสตร์"
+            android:translationY="-40dp" />
+
+        <Button
+            android:id="@+id/btnkulusad"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:onClick="Pagekulusad"
+            android:text="คณะครุศาสตร์"
+            android:translationY="-70dp" />
+
+        <Button
+            android:id="@+id/btnsci"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:onClick="Pagesci"
+            android:text="คณะวิทยาศาสตร์และเทคโนโลยี"
+            android:translationY="-100dp" />
+
+        <Button
+            android:id="@+id/btnprofile"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="#FF3366"
+            android:onClick="Pageprofile"
+            android:text="profile"
+            android:translationY="-40dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="#36B6EF"
+            android:gravity="center"
+            android:text="Information"
+            android:textColor="#FF9933"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:translationY="-200dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="100dp"
+        android:layout_height="58dp"
+        android:layout_margin="50dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:onClick="backPage1"
+        android:text="กลับ"
+        android:translationX="20dp"
+        android:translationY="-53dp" />
+
+    <Button
+        android:id="@+id/next2"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:layout_margin="50dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:onClick="NextPage2"
+        android:text="ถัดไป"
+        android:translationX="190dp"
+        android:translationY="-210dp" />
+
+</LinearLayout>
