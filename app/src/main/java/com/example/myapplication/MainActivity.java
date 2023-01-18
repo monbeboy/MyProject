@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     prepareData();
                     editTextNewCategory.setText("");
                     Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
+                    Intent intent = new Intent(MainActivity.this,MainActivity2.class);
                     startActivity(intent);
                 }
             }

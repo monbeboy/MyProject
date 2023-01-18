@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="    ลงชื่อเข้าใช้"
+
         android:textSize="18dp"
         android:translationX="20dp"
         app:autoSizeTextType="uniform" />
@@ -34,7 +35,7 @@
         android:layout_width="242dp"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:hint="  name - surname"
+        android:hint="  name - username"
         android:translationX="20dp"
         android:translationY="-10dp" />
 
