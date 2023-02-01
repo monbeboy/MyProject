@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/cc"
+    android:background="@drawable/xx"
     tools:context=".MainActivity2">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="50dp"
         android:background="@color/purple_200"
         android:textStyle="bold"
-        android:layout_margin="20dp"
+        android:layout_margin="30dp"
         android:layout_gravity="center"
         android:text="ภาพอาคารสถานที่"
         android:gravity="center"
@@ -77,14 +77,14 @@
             android:translationY="-100dp" />
 
         <Button
-            android:id="@+id/btnprofile"
+            android:id="@+id/btnpan"
             android:layout_width="157dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            android:backgroundTint="#FF3366"
-            android:onClick="Pageprofile"
-            android:text="profile"
+            android:backgroundTint="#FF6666"
+            android:onClick="Pagepan"
+            android:text="แผนผัง"
             android:translationY="-40dp" />
 
         <TextView
@@ -92,11 +92,11 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:background="#36B6EF"
+            android:layout_margin="30dp"
+            android:background="#66ccFF"
             android:gravity="center"
-            android:text="Information"
-            android:textColor="#fFBfB0"
+            android:text="แผนผังอาคารเรียน"
+            android:textColor="#FF9900"
             android:textSize="24dp"
             android:textStyle="bold"
             android:translationY="-200dp" />
@@ -112,7 +112,7 @@
         android:onClick="backPage1"
         android:text="กลับ"
         android:translationX="20dp"
-        android:translationY="-53dp" />
+        android:translationY="-63dp" />
 
     <Button
         android:id="@+id/next2"
@@ -123,6 +123,6 @@
         android:onClick="NextPage2"
         android:text="ถัดไป"
         android:translationX="190dp"
-        android:translationY="-210dp" />
+        android:translationY="-220dp" />
 
 </LinearLayout>

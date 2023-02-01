@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
-    android:background="@drawable/bb"
+    android:background="@drawable/kk"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -23,7 +22,7 @@
             android:layout_margin="20dp"
             android:gravity="center"
             android:text="ภาพอาคารสถานที่และชื่อของอาคาร"
-            android:textColor="#FFC77A"
+            android:textColor="#FF9900"
             android:textSize="20dp"
             android:textStyle="bold"
             android:translationY="30dp" />
@@ -36,7 +35,7 @@
             android:layout_margin="20dp"
             android:gravity="center"
             android:text="มหาลัยราชภัฎเพชรบรูณ์"
-            android:textColor="#FFC77A"
+            android:textColor="#FF9900"
             android:textSize="18dp"
             android:translationY="-10dp" />
     </LinearLayout>
@@ -47,9 +46,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="    ลงชื่อเข้าใช้"
-        android:textColor="#FFFFFF"
+        android:textColor="#17478c"
         android:textSize="18dp"
-
+        android:textStyle="bold"
         android:translationX="20dp"
         app:autoSizeTextType="uniform" />
 
@@ -58,8 +57,9 @@
         android:layout_width="242dp"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:hint="  name - username"
-        android:textColor="#FFFFFF"
+        android:hint="name - username"
+        android:textColorHint="#17478c"
+        android:textColor="#17478c"
         android:translationX="20dp"
         android:translationY="-10dp" />
 
@@ -81,16 +81,32 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="268dp"
         android:orientation="vertical">
 
         <ListView
             android:id="@+id/todo_listview"
             android:layout_width="match_parent"
-            android:layout_height="347dp"
+            android:layout_height="309dp"
             android:layout_below="@+id/button_category"
             android:layout_alignParentStart="true"
             android:translationY="-50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnprofile"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="#FF3366"
+            android:onClick="Pageprofile"
+            android:text="ติดต่อสอบถาม" />
     </LinearLayout>
 
 

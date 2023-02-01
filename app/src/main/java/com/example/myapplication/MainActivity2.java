@@ -3,17 +3,33 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 
-public class MainActivity2 extends AppCompatActivity {
+import java.net.URI;
 
+public class MainActivity2 extends AppCompatActivity {
+    Button mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-    }
+
+            mp = findViewById(R.id.btnpan);
+            mp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    goLink("https://www.pcru.ac.th/main/view/mapbuilding");
+                }
+            });
+        }
+
+        private void goLink(String s) {
+            Uri uri = Uri.parse(s);
+            startActivity(new Intent(Intent.ACTION_VIEW,uri));
+        }
         public void backPage1(View view) {
             Button button_back = (Button)findViewById(R.id.back1);
             Intent intent = new Intent(this, MainActivity.class);
@@ -49,9 +65,9 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent = new Intent(this, sci.class);
         startActivity(intent);
     }
-    public void Pageprofile(View view) {
-        Button button_next = (Button) findViewById(R.id.btnprofile);
-        Intent intent = new Intent(this, Information.class);
+    public void Pagepan(View view) {
+        Button button_next = (Button) findViewById(R.id.btnpan);
+        Intent intent = new Intent(this, Map.class);
         startActivity(intent);
     }
 }

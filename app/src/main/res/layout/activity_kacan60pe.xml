@@ -5,71 +5,130 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/tt"
+    android:background="@drawable/oo"
     tools:context=".kacan60pe">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="359dp"
+            android:layout_height="340dp"
             app:srcCompat="@drawable/acan60pe" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="43dp"
+            android:gravity="center"
             android:rotationX="4"
             android:text="สำนักงานอธิการบดี"
-            android:gravity="center"
-            android:translationY="10dp"
             android:textColor="#CC0000"
+            android:textSize="24dp"
             android:textStyle="bold"
-            android:textSize="24dp" />
+            android:translationY="10dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ช่องทางการติดต่อ"
+            android:textColor="#E95C00"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationY="40dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#ffbcbc"
+            android:text="  มหาวิทยาลัยราชภัฏเพชรบูรณ์
+83 หมู่ 11 ถนนสระบุรี-หล่มสัก ตำบลสะเดียง อำเภอเมือง จังหวัดเพชรบูรณ์ 67000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:translationY="30dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#ffbcbc"
+            android:drawableLeft="@drawable/ic_baseline_phone_in_talk_24"
+            android:text="  โทรศัพท์ 056-717100"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:translationY="-10dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#ffbcbc"
+            android:drawableLeft="@drawable/ic_baseline_phone_in_talk_24"
+            android:text="   โทรสาร 056-717110"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:translationY="-50dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#ffbcbc"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:text="   อีเมล์ pcrumail@pcru.ac.th"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:translationY="-91dp" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:onClick="HomePage1"
+            android:text="Home"
+            android:translationX="3dp"
+            android:translationY="-80dp" />
+
+        <Button
+            android:id="@+id/next2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:onClick="NextPage2"
+            android:text="ถัดไป"
+            android:translationX="128dp"
+            android:translationY="-150dp" />
+
+        <Button
+            android:id="@+id/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_margin="23dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:onClick="backPage1"
+            android:text="กลับ"
+            android:translationY="-230dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <Button
-                android:id="@+id/home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:onClick="HomePage1"
-                android:backgroundTint="@color/design_default_color_secondary"
-                android:text="Home"
-                android:translationX="3dp"
-                android:translationY="204dp" />
-
-            <Button
-                android:id="@+id/next2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:backgroundTint="@color/design_default_color_secondary"
-                android:layout_gravity="center"
-                android:translationX="128dp"
-                android:translationY="137dp"
-                android:onClick="NextPage2"
-                android:text="ถัดไป" />
-
-            <Button
-                android:id="@+id/back1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="23dp"
-                android:backgroundTint="@color/design_default_color_secondary"
-                android:onClick="backPage1"
-                android:text="กลับ"
-                android:translationY="57dp" />
 
         </LinearLayout>
 

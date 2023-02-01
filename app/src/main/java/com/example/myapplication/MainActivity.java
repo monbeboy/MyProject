@@ -59,5 +59,10 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, android.R.id.text1, listCategories);
         spinnerCategories.setAdapter(adapter);
     }
+    public void Pageprofile(View view) {
+        Button button_profile = (Button)findViewById(R.id.btnprofile);
+        Intent intent = new Intent(this, Information.class);
+        startActivity(intent);
 
     }
+}
